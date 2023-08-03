@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart | Edit product</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createProduct.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=PT+Sans&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!--  <i class="fa-solid fa-cart-shopping"></i> -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="index.html">Shopping Cart</a>
+          <nav>
+            <ul id="links">
+              <li><a href="login.html">Sign in</a></li>
+              <li><a href="register.html">Sign up</a></li>
+            </ul>
+            <ul id="user-info">
+              <li> <a id="user" href=""></a></li>
+              <li class="cart-product">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge"></span>
+                <div class="products-list">
+                  <div></div>
+                  <a href="cart.html">view all products</a>
+                </div>
+              </li>
+              <li> <a href="favorite.html">Favorite</a></li>
+              <li> <a href="myProduct.html">MyProducts</a></li>
+    
+              <li> <a id="logout" href="">Log out</a></li>
+    
+            </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+    <section class="create-product">
+      <div class="container">
+        <form novalidate id="updateProductForm">
+            <input type="text" placeholder="Product name" id="productName">
+            <input type="text" placeholder="Product description" id="productDesc">
+            <input type="file" placeholder="Product image" id="productImage">
+
+            <select name="Product size" id="productSize">
+              <option value=""hidden>Select size</option>
+                <option value="small">Small</option>
+                <option value="meduim">Meduim</option>
+                <option value="large">Large</option>
+            </select>
+            <input type="submit" value="Save Changes">
+          </form>
+      </div>
+      <a class="add-product" href="createProduct.html"><i class="fa fa-plus-circle fa-3x"></i></a>
+
+    </section>
+    <script src="Js/user.js"></script>
+    <script src="Js/data.js"></script>
+    <script src="Js/cartMenu.js"></script>
+    <script src="Js/editProduct.js"></script>
+  </body>
+</html>
